@@ -36,6 +36,26 @@ Grey dark 3: #999
 
     --line: 1px solid var(--color-grey-light-2);
 }
+
+// 1200px;
+$bg-largest: 75em; 
+
+// 1100px;
+$bg-large: 68.75em; 
+
+// 900px;
+$bg-medium: 56.25em; 
+
+// 600px;
+$bg-small: 37.5em; 
+
+// 530px;
+$bg-smaller: 33.125em; 
+
+// 500px;
+$bg-smallest: 31.25em; 
+
+
 *{
     margin: 0;
     padding: 0;
@@ -50,6 +70,11 @@ html{
     box-sizing: border-box;
     // 1 rem = 10px, 10px/16px*100 = 62.5%
     font-size: 62.5%;
+
+    @media only screen and (max-width:$bg-large) {
+        // 1 rem = 8px, 8px/16px*100 = 50%
+    font-size: 50%;
+    }
 }
 body{
     font-family: 'Open Sans',sans-serif;
